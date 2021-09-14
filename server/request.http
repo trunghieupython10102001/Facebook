@@ -1,0 +1,26 @@
+POST http://localhost:3000/authen/register
+Content-Type: application/json
+
+{
+	"firstname": "Hieu",
+	"lastname": "Trung",
+	"email": "hieu@gmail.com",
+	"password": "12",
+	"day": "10",
+	"month": "10",
+	"year": "2001",
+	"gender": "male"
+} 
+
+###
+POST http://localhost:4000/authen/login
+Content-Type: application/json
+
+{
+	"email": "hieu@gmail.com",
+	"password": "12"
+}
+
+###
+GET http://localhost:3000/checklogin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMmYzZDY4MjRjNTMwNzMwZmEwNzFlZSIsImlhdCI6MTYzMDQ4NTg2NCwiZXhwIjoxNjMwNDg2NzY0fQ.HQ7aDR55cqcUl-H0FKYqhH5hLaR5hPcaWddfJXViLnk
